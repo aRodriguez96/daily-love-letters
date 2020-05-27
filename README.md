@@ -1,5 +1,5 @@
 # Daily Love Letters
 
-This program scrapes a website with quotes about love and stores them offline on a file. 
-Every day in the morning the program gets one quote from the file, wraps it in an email template, 
+This program takes an array with quotes about your significant other and sends it via email. 
+Every day in the morning the program gets one quote from the array, wraps it in an email template, 
 and sends it to my girlfriend as something nice to start the day.
