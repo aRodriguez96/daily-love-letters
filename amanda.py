@@ -36,7 +36,7 @@ for x in range(len(stack)):
     print(stack.pop())
 '''
 
-first_email_time = dt.datetime(2020,5,27,20,48,0) 
+first_email_time = dt.datetime(2020,5,27,10,0,0) 
 interval = dt.timedelta(days=1) 
 
 send_time = first_email_time
