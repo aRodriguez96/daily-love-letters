@@ -8,9 +8,7 @@ def send_email(message):
     server = smtplib.SMTP ('smtp.gmail.com', 587)
     server.starttls()
     server.login(email_user, 'FROM_EMAIL_PASSWORD')
-
-    #EMAIL
-    str = 'Hello baby, \nThis is today\'s quote that shows how much I love you and how much you mean to me.\n\n'+'\''+message+'\''+'\n\nI love you so much my sunshine <3' 
+    str = 'Hi love! \nThis is today\'s quote that shows how much I love you and how much you mean to me.\n\n'+'\''+message' 
     server.sendmail(email_user,'TO_EMAIL', str)
     server.quit()
     print('done')
@@ -38,8 +36,8 @@ for x in range(len(stack)):
     print(stack.pop())
 '''
 
-first_email_time = dt.datetime(2020,5,27,20,48,0) # set your sending time in UTC
-interval = dt.timedelta(days=1) # set the interval for sending the email
+first_email_time = dt.datetime(2020,5,27,20,48,0) 
+interval = dt.timedelta(days=1) 
 
 send_time = first_email_time
 while True:
