@@ -8,7 +8,7 @@ def send_email(message):
     server = smtplib.SMTP ('smtp.gmail.com', 587)
     server.starttls()
     server.login(email_user, 'FROM_EMAIL_PASSWORD')
-    str = 'Hi love! \nThis is today\'s quote that shows how much I love you and how much you mean to me.\n\n'+'\''+message' 
+    str = 'Hi love! \nThis is today\'s quote that shows how much I love you.\n\n'+'\''+message' 
     server.sendmail(email_user,'TO_EMAIL', str)
     server.quit()
     print('done')
